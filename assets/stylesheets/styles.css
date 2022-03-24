@@ -1,0 +1,19 @@
+h1 {
+    background-color: antiquewhite;
+    border: solid 2px;
+}
+
+.pokemon {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    border: solid 2px;
+    margin: 5px;
+    padding-bottom: 20px;
+    background-color:antiquewhite ;
+}
+
+.pokemon img {
+    display: block;
+    padding: 10px;
+}
