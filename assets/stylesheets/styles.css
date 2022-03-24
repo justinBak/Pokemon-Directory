@@ -1,6 +1,8 @@
 h1 {
     background-color: antiquewhite;
     border: solid 2px;
+    width: 9vw;
+    margin-left: 5px;
 }
 
 .pokemon {
