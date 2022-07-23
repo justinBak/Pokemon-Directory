@@ -1,31 +1,18 @@
-// function add(x,y){
-// 	if (typeof x !== 'number' || typeof y !== 'number'){
-//   	return false;
-//   }
-//   let sum = x + y;
-//   return sum;
-// }
-
-// add(1, 'a');
-
-// To ADD to HTML Doc
-// const button = document.createElement('button');
-// button.innerText = 'Hey!';
-// const container = document.querySelector('.container');
-// document.body.appendChild(button);
-
 const container = document.querySelector('.container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
 
-for(i = 1; i < 800; ++i){
+// Loops through and prints out pokemon to webpage
+for(i = 1; i < 152; ++i){
   const pokemon = document.createElement('div');
   pokemon.classList.add('pokemon');
   const newLabel = document.createElement('div');
   const label = document.createElement('span');
   newLabel.innerText = 'Hanno Region';
   label.innerText = `#${i}`;
+  // Pulls the images api from the API url
   const newImg = document.createElement('img');
   newImg.src = `${baseURL}${i}.png`
+  // Appends pokemon images & labels to container div
   container.appendChild(pokemon);
   pokemon.appendChild(newImg);
   pokemon.appendChild(newLabel);
