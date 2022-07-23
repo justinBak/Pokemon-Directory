@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
 
 // Loops through and prints out pokemon to webpage
-for(i = 1; i < 152; ++i){
+for(i = 1; i < 152; ++i){ //<--- Change my condition to view less Pokemon or add more Pokemon
   const pokemon = document.createElement('div');
   pokemon.classList.add('pokemon');
   const newLabel = document.createElement('div');
